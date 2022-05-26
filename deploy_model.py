@@ -14,7 +14,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch.fft import rfft, rfftfreq, irfft
 
-
+# code or part of coded adapted from https://github.com/gwastro/ml-mock-data-challenge-1
 class Slicer(object):
     """Class that is used to slice and iterate over a single input data
     file.
@@ -137,7 +137,7 @@ class Slicer(object):
         else:
             return data, times
 
-
+# code or part of coded adapted from https://github.com/gwastro/ml-mock-data-challenge-1
 class TorchSlicer(Slicer, torch.utils.data.Dataset):
     def __init__(self, *args, **kwargs):
         torch.utils.data.Dataset.__init__(self)
@@ -147,7 +147,7 @@ class TorchSlicer(Slicer, torch.utils.data.Dataset):
         next_slice, next_time = Slicer.__getitem__(self, index)
         return torch.from_numpy(next_slice), torch.tensor(next_time)
 
-
+# code or part of coded adapted from https://github.com/gwastro/ml-mock-data-challenge-1
 def get_clusters(triggers, cluster_threshold=0.35, var=0.2):
     """Cluster a set of triggers into candidate detections.
 
@@ -208,7 +208,7 @@ def get_clusters(triggers, cluster_threshold=0.35, var=0.2):
 
     return cluster_times, cluster_values, cluster_timevars
 
-
+# code or part of coded adapted from https://github.com/gwastro/ml-mock-data-challenge-1
 def get_triggers(Network, inputfile, step_size=0.1,
                  trigger_threshold=0.2, device='cpu',
                  verbose=False, dtype=torch.float32,
@@ -276,7 +276,7 @@ def get_triggers(Network, inputfile, step_size=0.1,
         logging.info("A total of %i slices have exceeded the threshold of %f." % (len(triggers), trigger_threshold))
     return triggers
 
-
+# code from https://github.com/passalis/dain
 class DAIN_Layer(nn.Module):
     def __init__(self, mode='full', mean_lr=0.00001, gate_lr=0.001, scale_lr=0.00001, input_dim=144):
         super(DAIN_Layer, self).__init__()
