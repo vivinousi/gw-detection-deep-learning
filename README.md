@@ -1,11 +1,11 @@
-# Gravitational wave detection using Deep Residual Networks
+# AResGW: Gravitational Wave Detection using Deep Residual Networks
 Gravitational wave detection in real noise timeseries using deep residual neural networks.
 
 This repository contains the method submitted by our team, Virgo-AUTH, to the [MLGWSC](https://github.com/gwastro/ml-mock-data-challenge-1) competition.
 Our method contains the following components:
 1. A whitening module implemented in pytorch
 2. An adaptive normalization layer ([DAIN](https://github.com/passalis/dain)) for non-stationary timeseries
-3. A ResNet backbone with a depth of 52 layers
+3. A ResNet backbone with a depth of 54 layers
 4. Training with over 600K samples
 
 # Training

@@ -470,7 +470,7 @@ class ResBlock(nn.Module):
         return x
 
 
-class ResNet52(nn.Module):
+class ResNet54(nn.Module):
     def __init__(self):
         super().__init__()
         self.feature_extractor = nn.Sequential(
@@ -526,7 +526,7 @@ delta_f = 1 / 1.25
 def main(args):
     device = 'cuda:0' if torch.cuda.device_count() > 0 else 'cpu'
 
-    base_model = ResNet52().to(device)
+    base_model = ResNet54().to(device)
     norm = DAIN_Layer(input_dim=2).to(device)
 
     net = CropWhitenNet(base_model, norm).to(device)
