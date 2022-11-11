@@ -7,6 +7,9 @@ Our method contains the following components:
 2. An adaptive normalization layer ([DAIN](https://github.com/passalis/dain)) for non-stationary timeseries
 3. A ResNet backbone with a depth of 54 layers
 4. Training with over 600K samples
+5. SNR estimation based curriculum learning
+
+![Sensitive distance vs FAR plot](doc/sensitivity_plot.png)
 
 # Training
 
