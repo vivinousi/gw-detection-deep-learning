@@ -23,7 +23,6 @@ from modules.loss import reg_BCELoss
 from modules.resnet import ResNet54Double
 from modules.dain import DAIN_Layer
 from modules.whiten import CropWhitenNet
-from utils.eval_utils import get_clusters, get_triggers
 
 
 def decode_snr_schedule(sch_str):
