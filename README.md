@@ -1,3 +1,8 @@
+
+<div style="text-align: center;">
+  <img src="doc/ARESGW-LOGO.PNG" alt="ARESGW Logo" style="width: 30%; height: auto;">
+</div>
+
 # AResGW: Augmentation and RESidual networks for Gravitational Wave detection
 Gravitational wave detection in real noise timeseries using deep residual neural networks.
 
