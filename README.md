@@ -68,7 +68,7 @@ You can refer to results produced with this code as "**AresGW model 1**", adding
 
 # Enhanced models
 
-An enhanced version, **AresGW model 2**,  was introduced in this 2024 publication: https://arxiv.org/abs/2407.07820 . It was used to verify the majority of known detections within its training ranges, including a calculation of the astrophysical probability (p_astro). With AresGW model 2, we also found 8 new candidate events with p_astro > 0.5 ! 
+An enhanced version, [**AresGW model 2**](https://gitlab.com/niksterg/aresgw-o3),  was introduced in this 2024 publication: https://arxiv.org/abs/2407.07820 . It was used to verify the majority of known detections within its training ranges, including a calculation of the astrophysical probability (p_astro). With AresGW model 2, we also found 8 new candidate events with p_astro > 0.5 ! 
 
 
 # Previous models: Virgo-AUTH model
