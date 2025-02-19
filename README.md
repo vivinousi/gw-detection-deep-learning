@@ -6,6 +6,11 @@
 # AResGW: Augmentation and RESidual networks for Gravitational Wave detection
 Gravitational wave detection in real noise timeseries using deep residual neural networks.
 
+# NEW: Enhanced model
+
+An enhanced version, [**AresGW model 2**](https://gitlab.com/niksterg/aresgw-o3),  was introduced in this 2024 publication: https://arxiv.org/abs/2407.07820 . It was used to verify the majority of known detections within its training ranges, including a calculation of the astrophysical probability (p_astro). With AresGW model 2, we also found 8 new candidate events with p_astro > 0.5 !
+
+# Open source model
 This repository contains the **AresGW model 1** code published in [Nousi et al. (2023)](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.024022). It is an *improved* version of the *Virgo-AUTH model* that our team submitted to the [MLGWSC](https://github.com/gwastro/ml-mock-data-challenge-1) challenge.
 
 **AresGW model 1** contains the following components:
@@ -64,11 +69,7 @@ You can refer to results produced with this code as "**AresGW model 1**", adding
   journal={arXiv preprint arXiv:2211.01520},
   year={2022}
 }
-</pre>
-
-# Enhanced models
-
-An enhanced version, [**AresGW model 2**](https://gitlab.com/niksterg/aresgw-o3),  was introduced in this 2024 publication: https://arxiv.org/abs/2407.07820 . It was used to verify the majority of known detections within its training ranges, including a calculation of the astrophysical probability (p_astro). With AresGW model 2, we also found 8 new candidate events with p_astro > 0.5 ! 
+</pre> 
 
 
 # Previous models: Virgo-AUTH model
